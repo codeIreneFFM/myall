@@ -16,6 +16,8 @@
 		1AF0C0BA1D58625C009CC363 /* MethodsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF0C0B91D58625C009CC363 /* MethodsListViewController.m */; };
 		1AF0C0BD1D58639B009CC363 /* JumpAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF0C0BC1D58639B009CC363 /* JumpAnimationVC.m */; };
 		1AF0C0C01D586ACB009CC363 /* LoadWebVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF0C0BF1D586ACB009CC363 /* LoadWebVC.m */; };
+		1AF0C0C31D586E46009CC363 /* NSString+ColorCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF0C0C21D586E46009CC363 /* NSString+ColorCategory.m */; };
+		1AF0C0C61D586E57009CC363 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF0C0C51D586E57009CC363 /* BaseViewController.m */; };
 		5771A47E2D128506F66713C4 /* libPods-myall.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A174209A24CE9A5691DA4C3 /* libPods-myall.a */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +39,10 @@
 		1AF0C0BC1D58639B009CC363 /* JumpAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JumpAnimationVC.m; sourceTree = "<group>"; };
 		1AF0C0BE1D586ACB009CC363 /* LoadWebVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadWebVC.h; sourceTree = "<group>"; };
 		1AF0C0BF1D586ACB009CC363 /* LoadWebVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadWebVC.m; sourceTree = "<group>"; };
+		1AF0C0C11D586E46009CC363 /* NSString+ColorCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ColorCategory.h"; sourceTree = "<group>"; };
+		1AF0C0C21D586E46009CC363 /* NSString+ColorCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ColorCategory.m"; sourceTree = "<group>"; };
+		1AF0C0C41D586E57009CC363 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		1AF0C0C51D586E57009CC363 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		6E7FAF3AED73E08F5CA3F5E3 /* Pods-myall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myall.release.xcconfig"; path = "Pods/Target Support Files/Pods-myall/Pods-myall.release.xcconfig"; sourceTree = "<group>"; };
 		ACDC2A7E91CE422C70A3B1FA /* Pods-myall.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myall.debug.xcconfig"; path = "Pods/Target Support Files/Pods-myall/Pods-myall.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,6 +88,7 @@
 		1AF0C0A01D586229009CC363 /* myall */ = {
 			isa = PBXGroup;
 			children = (
+				1AF0C0C71D586E60009CC363 /* base */,
 				1AF0C0A41D586229009CC363 /* AppDelegate.h */,
 				1AF0C0A51D586229009CC363 /* AppDelegate.m */,
 				1AF0C0B81D58625C009CC363 /* MethodsListViewController.h */,
@@ -107,6 +114,17 @@
 				1AF0C0A21D586229009CC363 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1AF0C0C71D586E60009CC363 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				1AF0C0C41D586E57009CC363 /* BaseViewController.h */,
+				1AF0C0C51D586E57009CC363 /* BaseViewController.m */,
+				1AF0C0C11D586E46009CC363 /* NSString+ColorCategory.h */,
+				1AF0C0C21D586E46009CC363 /* NSString+ColorCategory.m */,
+			);
+			name = base;
 			sourceTree = "<group>";
 		};
 		AD66384AC596923CFBB10AA9 /* Pods */ = {
@@ -241,9 +259,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AF0C0A91D586229009CC363 /* ViewController.m in Sources */,
+				1AF0C0C61D586E57009CC363 /* BaseViewController.m in Sources */,
 				1AF0C0BD1D58639B009CC363 /* JumpAnimationVC.m in Sources */,
 				1AF0C0BA1D58625C009CC363 /* MethodsListViewController.m in Sources */,
 				1AF0C0C01D586ACB009CC363 /* LoadWebVC.m in Sources */,
+				1AF0C0C31D586E46009CC363 /* NSString+ColorCategory.m in Sources */,
 				1AF0C0A61D586229009CC363 /* AppDelegate.m in Sources */,
 				1AF0C0A31D586229009CC363 /* main.m in Sources */,
 			);

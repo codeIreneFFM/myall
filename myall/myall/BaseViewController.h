@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  BaseViewController.h
 //  myall
 //
 //  Created by yue wang on 16/8/8.
@@ -7,9 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseViewController.h"
-@interface ViewController : BaseViewController
 
-
+@interface BaseViewController : UIViewController
+- (void)backButtonAction;//导航栏返回键
 @end
-

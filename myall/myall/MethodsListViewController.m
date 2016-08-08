@@ -9,6 +9,7 @@
 #import "MethodsListViewController.h"
 #import "JumpAnimationVC.h"
 #import "LoadWebVC.h"
+#import "ViewController.h"
 @interface MethodsListViewController()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic,strong)UITableView *tableView;
 @property (nonatomic,strong)NSArray *methods;
@@ -20,7 +21,7 @@
     self.tableView.delegate =self;
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
-    self.methods = @[@"上下跳动动画",@"加载webview"];
+    self.methods = @[@"上下跳动动画",@"加载webview",@"定制回退按钮和导航栏颜色"];
 
 }
 #pragma mark - Table view datasource
@@ -76,6 +77,8 @@
         [self.navigationController pushViewController:vc animated:YES];
     
     }else if (indexPath.row == 2){
+        ViewController *vc = [[ViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
        
     }else if (indexPath.row == 3){
        
