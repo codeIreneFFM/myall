@@ -65,6 +65,8 @@
         JumpAnimationVC *vc = [[JumpAnimationVC alloc] init];
         //设置返回按钮
         UIBarButtonItem *backItem = [[UIBarButtonItem alloc] init];
+        [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, 1)
+                                                             forBarMetrics:UIBarMetricsDefault];
         backItem.title = @"退回";
         self.navigationItem.backBarButtonItem = backItem;
       

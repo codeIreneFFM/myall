@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MethodsListViewController.h"
+#import "GuideView.h"
 @interface AppDelegate ()
 
 @end
@@ -23,7 +24,28 @@
     MethodsListViewController *main = [[MethodsListViewController alloc] init];
     UINavigationController *nav= [[UINavigationController alloc] initWithRootViewController:main];
     self.window.rootViewController = nav;
+    if (![[NSUserDefaults standardUserDefaults] boolForKey:@"everLaunched"]) {
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"everLaunched"];
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"firstLaunch"];
+    }
+    else{
+        [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"firstLaunch"];
+    }
     
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"firstLaunch"]) {
+        // 这里判断是否第一次
+        
+        GuideView *gv = [[GuideView alloc]initWithFrame:CGRectMake(0, 0, MainScreen_width, MainScreen_height)];
+        
+        [self.window.rootViewController.view addSubview:gv];
+        
+        [UIView animateWithDuration:0.25 animations:^{
+            gv.frame = CGRectMake(0, 0, MainScreen_width, MainScreen_height);
+            
+        }];
+        
+    }
+
     return YES;
 
 }

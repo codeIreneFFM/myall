@@ -18,6 +18,7 @@
 		1AF0C0C01D586ACB009CC363 /* LoadWebVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF0C0BF1D586ACB009CC363 /* LoadWebVC.m */; };
 		1AF0C0C31D586E46009CC363 /* NSString+ColorCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF0C0C21D586E46009CC363 /* NSString+ColorCategory.m */; };
 		1AF0C0C61D586E57009CC363 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF0C0C51D586E57009CC363 /* BaseViewController.m */; };
+		1AF0C0CA1D5873E6009CC363 /* GuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF0C0C91D5873E6009CC363 /* GuideView.m */; };
 		5771A47E2D128506F66713C4 /* libPods-myall.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A174209A24CE9A5691DA4C3 /* libPods-myall.a */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,9 @@
 		1AF0C0C21D586E46009CC363 /* NSString+ColorCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ColorCategory.m"; sourceTree = "<group>"; };
 		1AF0C0C41D586E57009CC363 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		1AF0C0C51D586E57009CC363 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		1AF0C0C81D5873E6009CC363 /* GuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideView.h; sourceTree = "<group>"; };
+		1AF0C0C91D5873E6009CC363 /* GuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideView.m; sourceTree = "<group>"; };
+		1AF0C0CB1D587513009CC363 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		6E7FAF3AED73E08F5CA3F5E3 /* Pods-myall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myall.release.xcconfig"; path = "Pods/Target Support Files/Pods-myall/Pods-myall.release.xcconfig"; sourceTree = "<group>"; };
 		ACDC2A7E91CE422C70A3B1FA /* Pods-myall.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myall.debug.xcconfig"; path = "Pods/Target Support Files/Pods-myall/Pods-myall.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +127,9 @@
 				1AF0C0C51D586E57009CC363 /* BaseViewController.m */,
 				1AF0C0C11D586E46009CC363 /* NSString+ColorCategory.h */,
 				1AF0C0C21D586E46009CC363 /* NSString+ColorCategory.m */,
+				1AF0C0C81D5873E6009CC363 /* GuideView.h */,
+				1AF0C0C91D5873E6009CC363 /* GuideView.m */,
+				1AF0C0CB1D587513009CC363 /* Constants.h */,
 			);
 			name = base;
 			sourceTree = "<group>";
@@ -261,6 +268,7 @@
 				1AF0C0A91D586229009CC363 /* ViewController.m in Sources */,
 				1AF0C0C61D586E57009CC363 /* BaseViewController.m in Sources */,
 				1AF0C0BD1D58639B009CC363 /* JumpAnimationVC.m in Sources */,
+				1AF0C0CA1D5873E6009CC363 /* GuideView.m in Sources */,
 				1AF0C0BA1D58625C009CC363 /* MethodsListViewController.m in Sources */,
 				1AF0C0C01D586ACB009CC363 /* LoadWebVC.m in Sources */,
 				1AF0C0C31D586E46009CC363 /* NSString+ColorCategory.m in Sources */,
