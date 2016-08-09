@@ -11,6 +11,7 @@
 #import "LoadWebVC.h"
 #import "ViewController.h"
 #import "BasicAnimationVC.h"
+#import "BoomAnimationVC.h"
 @interface MethodsListViewController()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic,strong)UITableView *tableView;
 @property (nonatomic,strong)NSArray *methods;
@@ -22,7 +23,7 @@
     self.tableView.delegate =self;
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
-    self.methods = @[@"上下跳动动画",@"加载webview",@"定制回退按钮和导航栏颜色,纯色image",@"基础动画"];
+    self.methods = @[@"上下跳动动画",@"加载webview",@"定制回退按钮和导航栏颜色,纯色image",@"基础动画",@"爆炸动画"];
 
 }
 #pragma mark - Table view datasource
@@ -87,7 +88,8 @@
         BasicAnimationVC *vc = [[BasicAnimationVC alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }else if (indexPath.row == 4){
-    
+        BoomAnimationVC *vc = [[BoomAnimationVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
     }else if (indexPath.row ==5){
        
     }
