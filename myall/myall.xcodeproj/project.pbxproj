@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A1F3EDE1D5966FC00D1FC94 /* BasicAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1F3EDD1D5966FC00D1FC94 /* BasicAnimationVC.m */; };
 		1AF0C0A31D586229009CC363 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF0C0A21D586229009CC363 /* main.m */; };
 		1AF0C0A61D586229009CC363 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF0C0A51D586229009CC363 /* AppDelegate.m */; };
 		1AF0C0A91D586229009CC363 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF0C0A81D586229009CC363 /* ViewController.m */; };
@@ -24,6 +25,8 @@
 
 /* Begin PBXFileReference section */
 		1A174209A24CE9A5691DA4C3 /* libPods-myall.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-myall.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A1F3EDC1D5966FC00D1FC94 /* BasicAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicAnimationVC.h; sourceTree = "<group>"; };
+		1A1F3EDD1D5966FC00D1FC94 /* BasicAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicAnimationVC.m; sourceTree = "<group>"; };
 		1AF0C09E1D586229009CC363 /* myall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AF0C0A21D586229009CC363 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1AF0C0A41D586229009CC363 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -99,6 +102,8 @@
 				1AF0C0B91D58625C009CC363 /* MethodsListViewController.m */,
 				1AF0C0BB1D58639B009CC363 /* JumpAnimationVC.h */,
 				1AF0C0BC1D58639B009CC363 /* JumpAnimationVC.m */,
+				1A1F3EDC1D5966FC00D1FC94 /* BasicAnimationVC.h */,
+				1A1F3EDD1D5966FC00D1FC94 /* BasicAnimationVC.m */,
 				1AF0C0BE1D586ACB009CC363 /* LoadWebVC.h */,
 				1AF0C0BF1D586ACB009CC363 /* LoadWebVC.m */,
 				1AF0C0A71D586229009CC363 /* ViewController.h */,
@@ -265,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A1F3EDE1D5966FC00D1FC94 /* BasicAnimationVC.m in Sources */,
 				1AF0C0A91D586229009CC363 /* ViewController.m in Sources */,
 				1AF0C0C61D586E57009CC363 /* BaseViewController.m in Sources */,
 				1AF0C0BD1D58639B009CC363 /* JumpAnimationVC.m in Sources */,
