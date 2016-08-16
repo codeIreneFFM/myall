@@ -13,6 +13,7 @@
 #import "BasicAnimationVC.h"
 #import "BoomAnimationVC.h"
 #import "ShoppingVC.h"
+#import "UberAnimationVC.h"
 @interface MethodsListViewController()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic,strong)UITableView *tableView;
 @property (nonatomic,strong)NSArray *methods;
@@ -24,7 +25,7 @@
     self.tableView.delegate =self;
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
-    self.methods = @[@"上下跳动动画",@"加载webview",@"定制回退按钮和导航栏颜色,纯色image",@"基础动画",@"爆炸动画",@"购物页面"];
+    self.methods = @[@"上下跳动动画",@"加载webview",@"定制回退按钮和导航栏颜色,纯色image",@"基础动画",@"爆炸动画",@"购物页面",@"uber动画"];
 
 }
 #pragma mark - Table view datasource
@@ -95,7 +96,12 @@
         ShoppingVC *vc = [[ShoppingVC alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
 
+    }else if (indexPath.row ==6){
+        UberAnimationVC *vc = [[UberAnimationVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+        
     }
+
    
     
 }
