@@ -15,6 +15,7 @@
     [self compareTwoStringFindEqualNumberText1:@"aabbccdef" text2:@"sadhellojsad"];
     [self findEqualNumberAndSubstringFromText1:@"aabbccdef" text2:@"sadhellojsad"];
     [self sortProperty];
+    [self reverseArray];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -92,5 +93,14 @@
          NSLog(@"array2 rec count:%@", rec.matchedCount);
     }
     
+}
+
+-(void)reverseArray{
+    NSArray *array = [NSArray arrayWithObjects:@"a", @"b", @"c", @"d", @"e",nil];
+
+    NSArray* reversedArray = [[array  reverseObjectEnumerator] allObjects];
+    for (NSString *rec in reversedArray) {
+        NSLog(@"reversedArray:%@", rec);
+    }
 }
 @end

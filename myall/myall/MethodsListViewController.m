@@ -26,7 +26,7 @@
     self.tableView.delegate =self;
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
-    self.methods = @[@"上下跳动动画",@"加载webview",@"定制回退按钮和导航栏颜色,纯色image",@"基础动画",@"爆炸动画",@"购物页面",@"uber动画",@"比较字符串，属性排序"];
+    self.methods = @[@"上下跳动动画",@"加载webview",@"定制回退按钮和导航栏颜色,纯色image",@"基础动画",@"爆炸动画",@"购物页面",@"uber动画",@"比较字符串，属性排序,倒序"];
 
 }
 #pragma mark - Table view datasource
