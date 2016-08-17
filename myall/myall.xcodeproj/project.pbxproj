@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A1E0FC51D640FB200D2558C /* CompareStringVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1E0FC41D640FB200D2558C /* CompareStringVC.m */; };
+		1A1E0FC81D6411F900D2558C /* HealthRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1E0FC71D6411F900D2558C /* HealthRecord.m */; };
+		1A1E0FCB1D64120C00D2558C /* NSDictionary+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1E0FCA1D64120C00D2558C /* NSDictionary+Parse.m */; };
 		1A1F3EDE1D5966FC00D1FC94 /* BasicAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1F3EDD1D5966FC00D1FC94 /* BasicAnimationVC.m */; };
 		1A1F3EE11D59857100D1FC94 /* BoomAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1F3EE01D59857100D1FC94 /* BoomAnimationVC.m */; };
 		1A1F3EE41D5985F700D1FC94 /* UIView+boom.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1F3EE31D5985F700D1FC94 /* UIView+boom.m */; };
@@ -50,6 +53,12 @@
 
 /* Begin PBXFileReference section */
 		1A174209A24CE9A5691DA4C3 /* libPods-myall.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-myall.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A1E0FC31D640FB200D2558C /* CompareStringVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompareStringVC.h; sourceTree = "<group>"; };
+		1A1E0FC41D640FB200D2558C /* CompareStringVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompareStringVC.m; sourceTree = "<group>"; };
+		1A1E0FC61D6411F900D2558C /* HealthRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthRecord.h; sourceTree = "<group>"; };
+		1A1E0FC71D6411F900D2558C /* HealthRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthRecord.m; sourceTree = "<group>"; };
+		1A1E0FC91D64120C00D2558C /* NSDictionary+Parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Parse.h"; sourceTree = "<group>"; };
+		1A1E0FCA1D64120C00D2558C /* NSDictionary+Parse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Parse.m"; sourceTree = "<group>"; };
 		1A1F3EDC1D5966FC00D1FC94 /* BasicAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicAnimationVC.h; sourceTree = "<group>"; };
 		1A1F3EDD1D5966FC00D1FC94 /* BasicAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicAnimationVC.m; sourceTree = "<group>"; };
 		1A1F3EDF1D59857100D1FC94 /* BoomAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoomAnimationVC.h; sourceTree = "<group>"; };
@@ -219,6 +228,8 @@
 				1AF0C0BF1D586ACB009CC363 /* LoadWebVC.m */,
 				1AF0C0A71D586229009CC363 /* ViewController.h */,
 				1AF0C0A81D586229009CC363 /* ViewController.m */,
+				1A1E0FC31D640FB200D2558C /* CompareStringVC.h */,
+				1A1E0FC41D640FB200D2558C /* CompareStringVC.m */,
 				1AF0C0AA1D586229009CC363 /* Main.storyboard */,
 				1AF0C0AD1D586229009CC363 /* Assets.xcassets */,
 				1AF0C0AF1D586229009CC363 /* LaunchScreen.storyboard */,
@@ -239,6 +250,10 @@
 		1AF0C0C71D586E60009CC363 /* base */ = {
 			isa = PBXGroup;
 			children = (
+				1A1E0FC91D64120C00D2558C /* NSDictionary+Parse.h */,
+				1A1E0FCA1D64120C00D2558C /* NSDictionary+Parse.m */,
+				1A1E0FC61D6411F900D2558C /* HealthRecord.h */,
+				1A1E0FC71D6411F900D2558C /* HealthRecord.m */,
 				1AF0C0C41D586E57009CC363 /* BaseViewController.h */,
 				1AF0C0C51D586E57009CC363 /* BaseViewController.m */,
 				1AF0C0C11D586E46009CC363 /* NSString+ColorCategory.h */,
@@ -404,12 +419,15 @@
 				1A1F3EE11D59857100D1FC94 /* BoomAnimationVC.m in Sources */,
 				1A1F3EDE1D5966FC00D1FC94 /* BasicAnimationVC.m in Sources */,
 				1A8AAFA81D62A71A005499A9 /* UberAnimationVC.m in Sources */,
+				1A1E0FC81D6411F900D2558C /* HealthRecord.m in Sources */,
 				1AF0C0A91D586229009CC363 /* ViewController.m in Sources */,
+				1A1E0FC51D640FB200D2558C /* CompareStringVC.m in Sources */,
 				1AF0C0C61D586E57009CC363 /* BaseViewController.m in Sources */,
 				1AF0C0BD1D58639B009CC363 /* JumpAnimationVC.m in Sources */,
 				1AF0C0CA1D5873E6009CC363 /* GuideView.m in Sources */,
 				1AF0C0BA1D58625C009CC363 /* MethodsListViewController.m in Sources */,
 				1A1F3EFD1D59C55800D1FC94 /* ShoppingCollectionViewCell.m in Sources */,
+				1A1E0FCB1D64120C00D2558C /* NSDictionary+Parse.m in Sources */,
 				1AF0C0C01D586ACB009CC363 /* LoadWebVC.m in Sources */,
 				1AF0C0C31D586E46009CC363 /* NSString+ColorCategory.m in Sources */,
 				1A1F3EE41D5985F700D1FC94 /* UIView+boom.m in Sources */,

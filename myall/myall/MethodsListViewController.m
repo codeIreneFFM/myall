@@ -14,6 +14,7 @@
 #import "BoomAnimationVC.h"
 #import "ShoppingVC.h"
 #import "UberAnimationVC.h"
+#import "CompareStringVC.h"
 @interface MethodsListViewController()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic,strong)UITableView *tableView;
 @property (nonatomic,strong)NSArray *methods;
@@ -25,7 +26,7 @@
     self.tableView.delegate =self;
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
-    self.methods = @[@"上下跳动动画",@"加载webview",@"定制回退按钮和导航栏颜色,纯色image",@"基础动画",@"爆炸动画",@"购物页面",@"uber动画"];
+    self.methods = @[@"上下跳动动画",@"加载webview",@"定制回退按钮和导航栏颜色,纯色image",@"基础动画",@"爆炸动画",@"购物页面",@"uber动画",@"比较字符串，属性排序"];
 
 }
 #pragma mark - Table view datasource
@@ -98,6 +99,10 @@
 
     }else if (indexPath.row ==6){
         UberAnimationVC *vc = [[UberAnimationVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+        
+    }else if (indexPath.row ==7){
+        CompareStringVC *vc = [[CompareStringVC alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
         
     }
