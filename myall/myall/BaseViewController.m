@@ -19,7 +19,9 @@
 }
 - (void)setNavigationBar
 {
-    [self.navigationController.navigationBar setBarTintColor:[@"#3cc283" cmcciotHexColor]];
+    [self.navigationController.navigationBar setBarTintColor:[@"#3debc5" cmcciotHexColor]];//[@"#3cc283" cmcciotHexColor]];
+    self.navigationController.navigationBar.barStyle = UIBaselineAdjustmentNone;//隐藏navigationbar 下面的横线
+
     NSDictionary * dict = [NSDictionary dictionaryWithObject:[UIColor whiteColor] forKey:NSForegroundColorAttributeName];
     self.navigationController.navigationBar.titleTextAttributes = dict;
     

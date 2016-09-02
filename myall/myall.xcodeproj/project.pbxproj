@@ -36,6 +36,8 @@
 		1A1F3F241D59C62700D1FC94 /* a8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A1F3F111D59C62700D1FC94 /* a8.jpg */; };
 		1A1F3F251D59C62700D1FC94 /* a9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A1F3F121D59C62700D1FC94 /* a9.jpg */; };
 		1A8AAFA81D62A71A005499A9 /* UberAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8AAFA71D62A71A005499A9 /* UberAnimationVC.m */; };
+		1AD7DAD61D7967D4007698EF /* GetUUIDVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD7DAD51D7967D4007698EF /* GetUUIDVC.m */; };
+		1AD7DAD91D79680C007698EF /* JNKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD7DAD81D79680C007698EF /* JNKeychain.m */; };
 		1AF0C0A31D586229009CC363 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF0C0A21D586229009CC363 /* main.m */; };
 		1AF0C0A61D586229009CC363 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF0C0A51D586229009CC363 /* AppDelegate.m */; };
 		1AF0C0A91D586229009CC363 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF0C0A81D586229009CC363 /* ViewController.m */; };
@@ -92,6 +94,10 @@
 		1A1F3F121D59C62700D1FC94 /* a9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = a9.jpg; sourceTree = "<group>"; };
 		1A8AAFA61D62A71A005499A9 /* UberAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UberAnimationVC.h; sourceTree = "<group>"; };
 		1A8AAFA71D62A71A005499A9 /* UberAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UberAnimationVC.m; sourceTree = "<group>"; };
+		1AD7DAD41D7967D4007698EF /* GetUUIDVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetUUIDVC.h; sourceTree = "<group>"; };
+		1AD7DAD51D7967D4007698EF /* GetUUIDVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetUUIDVC.m; sourceTree = "<group>"; };
+		1AD7DAD71D79680C007698EF /* JNKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNKeychain.h; sourceTree = "<group>"; };
+		1AD7DAD81D79680C007698EF /* JNKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNKeychain.m; sourceTree = "<group>"; };
 		1AF0C09E1D586229009CC363 /* myall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AF0C0A21D586229009CC363 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1AF0C0A41D586229009CC363 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -224,6 +230,8 @@
 				1AF0C0A51D586229009CC363 /* AppDelegate.m */,
 				1AF0C0B81D58625C009CC363 /* MethodsListViewController.h */,
 				1AF0C0B91D58625C009CC363 /* MethodsListViewController.m */,
+				1AD7DAD41D7967D4007698EF /* GetUUIDVC.h */,
+				1AD7DAD51D7967D4007698EF /* GetUUIDVC.m */,
 				1AF0C0BE1D586ACB009CC363 /* LoadWebVC.h */,
 				1AF0C0BF1D586ACB009CC363 /* LoadWebVC.m */,
 				1AF0C0A71D586229009CC363 /* ViewController.h */,
@@ -250,6 +258,8 @@
 		1AF0C0C71D586E60009CC363 /* base */ = {
 			isa = PBXGroup;
 			children = (
+				1AD7DAD71D79680C007698EF /* JNKeychain.h */,
+				1AD7DAD81D79680C007698EF /* JNKeychain.m */,
 				1A1E0FC91D64120C00D2558C /* NSDictionary+Parse.h */,
 				1A1E0FCA1D64120C00D2558C /* NSDictionary+Parse.m */,
 				1A1E0FC61D6411F900D2558C /* HealthRecord.h */,
@@ -429,6 +439,8 @@
 				1A1F3EFD1D59C55800D1FC94 /* ShoppingCollectionViewCell.m in Sources */,
 				1A1E0FCB1D64120C00D2558C /* NSDictionary+Parse.m in Sources */,
 				1AF0C0C01D586ACB009CC363 /* LoadWebVC.m in Sources */,
+				1AD7DAD61D7967D4007698EF /* GetUUIDVC.m in Sources */,
+				1AD7DAD91D79680C007698EF /* JNKeychain.m in Sources */,
 				1AF0C0C31D586E46009CC363 /* NSString+ColorCategory.m in Sources */,
 				1A1F3EE41D5985F700D1FC94 /* UIView+boom.m in Sources */,
 				1AF0C0A61D586229009CC363 /* AppDelegate.m in Sources */,
