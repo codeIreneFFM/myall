@@ -66,7 +66,7 @@
 
 -(void)handleSingleTapFrom
 {
-    if (_pageControl.currentPage == 3) {
+    if (_pageControl.currentPage == _imageArray.count-1) {
         
         self.hidden = YES;
         
