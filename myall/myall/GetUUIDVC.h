@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "CLHeaderCircleView.h"
 @interface GetUUIDVC : UIViewController
+{
 
+ CLHeaderCircleView  * _headerCircle;
+}
 @end
