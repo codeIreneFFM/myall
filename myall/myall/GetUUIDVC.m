@@ -10,10 +10,12 @@
 #import "JNKeychain.h"
 #import "Constants.h"
 static NSString * const KeyUUID = @"KeyUUID";
+@interface  GetUUIDVC()<NSURLSessionDelegate>
+@end
 @implementation GetUUIDVC
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title= @"获取UUID";
+    self.title= @"UUID按钮图片系统信息itunes信息";
     self.view.backgroundColor = [UIColor whiteColor];
     NSString *UUID = [self getDeviceIdentifier];
     NSLog(@"UUID = %@",UUID);
@@ -23,6 +25,7 @@ static NSString * const KeyUUID = @"KeyUUID";
     [self addButtonTopDown];
     [self addCircleView];
     [self getSystemPara];
+    [self getInfoFromiTunes];
 }
 -(NSString *)getDeviceIdentifier{
     
@@ -92,6 +95,46 @@ static NSString * const KeyUUID = @"KeyUUID";
     NSString *bundleVersion = [infoDictionary objectForKey:@"CFBundleVersion"];
     NSLog(@"bundleVersion = %@",bundleVersion);
 }
+
+
+-(void)getInfoFromiTunes{
+    NSString *method = @"POST";
+    int timeOut = 30;
+    NSString *targetFullUrl = @"https://itunes.apple.com/cn/lookup?id=1145739582";
+    NSMutableURLRequest *httpRequst = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:targetFullUrl]];
+    // CMCCIOTLOG(@"httpRequst ----- %@",httpRequst.URL);
+    [httpRequst setHTTPMethod:method];
+    [httpRequst setTimeoutInterval:timeOut];
+     NSDictionary *targetRequestInfo = nil;
+   
+    
+    [httpRequst setHTTPBody:nil];
+    NSURLSessionConfiguration *defaultConfigObject = [NSURLSessionConfiguration defaultSessionConfiguration];
+    NSURLSession *defaultSession = [NSURLSession sessionWithConfiguration: defaultConfigObject delegate: self delegateQueue: [NSOperationQueue mainQueue]];
+    NSURLSessionDataTask * dataTask =[defaultSession dataTaskWithRequest:httpRequst
+                                                       completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+                                                           //CMCCIOTLOG(@"Response:%@ %@\n", response, error);
+                                                           NSLog(@"Response receiced and error is%@\n",  error);
+                                                           NSHTTPURLResponse* httpResponse = (NSHTTPURLResponse*)response;
+                                                           NSInteger responseStatusCode = [httpResponse statusCode];
+                                                           NSLog(@"responseStatusCode %ld", (long)responseStatusCode);
+                                                           NSDictionary *responseHeaders = [httpResponse allHeaderFields];
+                                                           NSLog(@"responseHeaders %@",responseHeaders);
+                                                           
+                                                           id responseresult =[NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
+                                                           NSDictionary *responseResultDic = (NSDictionary *)responseresult;
+                                                           NSLog(@"%@", responseResultDic);
+                                                           
+                                                           NSArray *resultArray = [responseResultDic objectForKey:@"results"];
+                                                           NSDictionary *dict = [resultArray lastObject];
+                                                           
+                                                           NSArray *keys = [dict allKeys];
+                                                           NSLog(@"allkeys %@",keys);
+                                                           
+                                                           
+                                                       }];
+    [dataTask resume];
+}
 /*关于setTitleEdgeInsets和setImageEdgeInsets下面进行一些解释：
 UIButton内有两个控件titleLabel和imageView，可以用来显示一个文本和图片，这里的图片区别于背景图片。给UIButton设置了title和image后，它们会图片在左边，文本在图片右边显示。它们两个做为一个整体依赖于button的contentHorizontalAlignment居左居右或居中显示。
 
@@ -120,4 +163,8 @@ typedefNS_ENUM(NSInteger, UIControlContentHorizontalAlignment) {
     
 }
 
+- (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task
+didCompleteWithError:(nullable NSError *)error{
+
+}
 @end
