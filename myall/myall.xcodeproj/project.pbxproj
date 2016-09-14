@@ -35,6 +35,7 @@
 		1A1F3F231D59C62700D1FC94 /* a7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A1F3F101D59C62700D1FC94 /* a7.jpg */; };
 		1A1F3F241D59C62700D1FC94 /* a8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A1F3F111D59C62700D1FC94 /* a8.jpg */; };
 		1A1F3F251D59C62700D1FC94 /* a9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A1F3F121D59C62700D1FC94 /* a9.jpg */; };
+		1A64F7151D878A6200E97588 /* MyCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A64F7141D878A6200E97588 /* MyCollectionViewController.m */; };
 		1A6E607D1D81591700BB5232 /* CLHeaderCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E607C1D81591700BB5232 /* CLHeaderCircleView.m */; };
 		1A8AAFA81D62A71A005499A9 /* UberAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8AAFA71D62A71A005499A9 /* UberAnimationVC.m */; };
 		1AD7DAD61D7967D4007698EF /* GetUUIDVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD7DAD51D7967D4007698EF /* GetUUIDVC.m */; };
@@ -93,6 +94,8 @@
 		1A1F3F101D59C62700D1FC94 /* a7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = a7.jpg; sourceTree = "<group>"; };
 		1A1F3F111D59C62700D1FC94 /* a8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = a8.jpg; sourceTree = "<group>"; };
 		1A1F3F121D59C62700D1FC94 /* a9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = a9.jpg; sourceTree = "<group>"; };
+		1A64F7131D878A6200E97588 /* MyCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewController.h; sourceTree = "<group>"; };
+		1A64F7141D878A6200E97588 /* MyCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewController.m; sourceTree = "<group>"; };
 		1A6E607B1D81591700BB5232 /* CLHeaderCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHeaderCircleView.h; sourceTree = "<group>"; };
 		1A6E607C1D81591700BB5232 /* CLHeaderCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHeaderCircleView.m; sourceTree = "<group>"; };
 		1A8AAFA61D62A71A005499A9 /* UberAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UberAnimationVC.h; sourceTree = "<group>"; };
@@ -241,6 +244,8 @@
 				1AF0C0A81D586229009CC363 /* ViewController.m */,
 				1A1E0FC31D640FB200D2558C /* CompareStringVC.h */,
 				1A1E0FC41D640FB200D2558C /* CompareStringVC.m */,
+				1A64F7131D878A6200E97588 /* MyCollectionViewController.h */,
+				1A64F7141D878A6200E97588 /* MyCollectionViewController.m */,
 				1AF0C0AA1D586229009CC363 /* Main.storyboard */,
 				1AF0C0AD1D586229009CC363 /* Assets.xcassets */,
 				1AF0C0AF1D586229009CC363 /* LaunchScreen.storyboard */,
@@ -449,6 +454,7 @@
 				1AD7DAD91D79680C007698EF /* JNKeychain.m in Sources */,
 				1AF0C0C31D586E46009CC363 /* NSString+ColorCategory.m in Sources */,
 				1A1F3EE41D5985F700D1FC94 /* UIView+boom.m in Sources */,
+				1A64F7151D878A6200E97588 /* MyCollectionViewController.m in Sources */,
 				1AF0C0A61D586229009CC363 /* AppDelegate.m in Sources */,
 				1AF0C0A31D586229009CC363 /* main.m in Sources */,
 				1A1F3EFE1D59C55800D1FC94 /* ShoppingTableViewCell.m in Sources */,

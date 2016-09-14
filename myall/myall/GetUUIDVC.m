@@ -22,6 +22,7 @@ static NSString * const KeyUUID = @"KeyUUID";
     [self addButtonWithImageOnRight];
     [self addButtonTopDown];
     [self addCircleView];
+    [self getSystemPara];
 }
 -(NSString *)getDeviceIdentifier{
     
@@ -78,6 +79,18 @@ static NSString * const KeyUUID = @"KeyUUID";
     //_headerCircle.delegate = self;
     [self.view addSubview:_headerCircle];
 
+}
+
+-(void)getSystemPara{
+    NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
+    NSString *currentVersion = [infoDictionary objectForKey:@"CFBundleShortVersionString"];
+    NSLog(@"currentVersion = %@",currentVersion);
+    
+    NSString *displayName = [infoDictionary objectForKey:@"CFBundleDisplayName"];
+    NSLog(@"displayName = %@",displayName);
+    
+    NSString *bundleVersion = [infoDictionary objectForKey:@"CFBundleVersion"];
+    NSLog(@"bundleVersion = %@",bundleVersion);
 }
 /*关于setTitleEdgeInsets和setImageEdgeInsets下面进行一些解释：
 UIButton内有两个控件titleLabel和imageView，可以用来显示一个文本和图片，这里的图片区别于背景图片。给UIButton设置了title和image后，它们会图片在左边，文本在图片右边显示。它们两个做为一个整体依赖于button的contentHorizontalAlignment居左居右或居中显示。
