@@ -21,7 +21,20 @@
 {
     [self.navigationController.navigationBar setBarTintColor:[@"#3debc5" cmcciotHexColor]];//[@"#3cc283" cmcciotHexColor]];
     self.navigationController.navigationBar.barStyle = UIBaselineAdjustmentNone;//隐藏navigationbar 下面的横线
-
+    /*网上另外一个方法是说那个横线其实是navigation bar 的背景线，navigationBar的shadowImage，所以只要设置它为空即可，但是设置它为空之前应该先设置它的背景也为空，全部代码如下：
+    
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
+     既然导航栏的那一横线能去除，那tabbar那一横线也是能去除的了（其实也是shadowImage来的）···
+     方法一：
+     
+     自定义UITabBarController
+     方法二：
+     
+     [self.tabBarController.tabBar setBackgroundImage:[UIImage new]];
+     [self.tabBarController.tabBar setShadowImage:[UIImage new]];
+     
+     反之，如果我们想自定义那一横线的颜色也是可以的，只要设置它的shadowImage即可。*/
     NSDictionary * dict = [NSDictionary dictionaryWithObject:[UIColor whiteColor] forKey:NSForegroundColorAttributeName];
     self.navigationController.navigationBar.titleTextAttributes = dict;
     
