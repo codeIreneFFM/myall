@@ -16,6 +16,7 @@
 #import "UberAnimationVC.h"
 #import "CompareStringVC.h"
 #import "GetUUIDVC.h"
+#import "TabbarAnimation.h"
 @interface MethodsListViewController()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic,strong)UITableView *tableView;
 @property (nonatomic,strong)NSArray *methods;
@@ -27,7 +28,7 @@
     self.tableView.delegate =self;
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
-    self.methods = @[@"上下跳动动画",@"加载webview",@"定制回退按钮和导航栏颜色,纯色image",@"基础动画",@"爆炸动画",@"购物页面",@"uber动画",@"比较字符串，属性排序,倒序",@"拉起应用",@"UUID按钮图片系统信息itunes信息"];
+    self.methods = @[@"上下跳动动画",@"加载webview",@"定制回退按钮和导航栏颜色,纯色image",@"基础动画",@"爆炸动画",@"购物页面",@"uber动画",@"比较字符串，属性排序,倒序",@"拉起应用",@"UUID按钮图片系统信息itunes信息",@"tabbar动画"];
 
 }
 #pragma mark - Table view datasource
@@ -118,6 +119,9 @@
         
         GetUUIDVC *vc = [[GetUUIDVC alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
+    }else if(indexPath.row == 10){
+        TabbarAnimation *tabbar = [[TabbarAnimation alloc] init];
+        [self.navigationController pushViewController:tabbar animated:YES];
     }
 
    

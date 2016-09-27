@@ -35,6 +35,10 @@
 		1A1F3F231D59C62700D1FC94 /* a7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A1F3F101D59C62700D1FC94 /* a7.jpg */; };
 		1A1F3F241D59C62700D1FC94 /* a8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A1F3F111D59C62700D1FC94 /* a8.jpg */; };
 		1A1F3F251D59C62700D1FC94 /* a9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A1F3F121D59C62700D1FC94 /* a9.jpg */; };
+		1A52D0C61D9A47BB005A0C15 /* TabbarAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A52D0C51D9A47BB005A0C15 /* TabbarAnimation.m */; };
+		1A52D0C91D9A488C005A0C15 /* ViewControllerOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A52D0C81D9A488C005A0C15 /* ViewControllerOne.m */; };
+		1A52D0CC1D9A48A6005A0C15 /* ViewControllerTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A52D0CB1D9A48A6005A0C15 /* ViewControllerTwo.m */; };
+		1A52D0CF1D9A48BB005A0C15 /* ViewControllerThree.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A52D0CE1D9A48BB005A0C15 /* ViewControllerThree.m */; };
 		1A64F7151D878A6200E97588 /* MyCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A64F7141D878A6200E97588 /* MyCollectionViewController.m */; };
 		1A6E607D1D81591700BB5232 /* CLHeaderCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E607C1D81591700BB5232 /* CLHeaderCircleView.m */; };
 		1A8AAFA81D62A71A005499A9 /* UberAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8AAFA71D62A71A005499A9 /* UberAnimationVC.m */; };
@@ -94,6 +98,14 @@
 		1A1F3F101D59C62700D1FC94 /* a7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = a7.jpg; sourceTree = "<group>"; };
 		1A1F3F111D59C62700D1FC94 /* a8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = a8.jpg; sourceTree = "<group>"; };
 		1A1F3F121D59C62700D1FC94 /* a9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = a9.jpg; sourceTree = "<group>"; };
+		1A52D0C41D9A47BB005A0C15 /* TabbarAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabbarAnimation.h; sourceTree = "<group>"; };
+		1A52D0C51D9A47BB005A0C15 /* TabbarAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabbarAnimation.m; sourceTree = "<group>"; };
+		1A52D0C71D9A488C005A0C15 /* ViewControllerOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerOne.h; sourceTree = "<group>"; };
+		1A52D0C81D9A488C005A0C15 /* ViewControllerOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerOne.m; sourceTree = "<group>"; };
+		1A52D0CA1D9A48A6005A0C15 /* ViewControllerTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerTwo.h; sourceTree = "<group>"; };
+		1A52D0CB1D9A48A6005A0C15 /* ViewControllerTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerTwo.m; sourceTree = "<group>"; };
+		1A52D0CD1D9A48BB005A0C15 /* ViewControllerThree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerThree.h; sourceTree = "<group>"; };
+		1A52D0CE1D9A48BB005A0C15 /* ViewControllerThree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerThree.m; sourceTree = "<group>"; };
 		1A64F7131D878A6200E97588 /* MyCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewController.h; sourceTree = "<group>"; };
 		1A64F7141D878A6200E97588 /* MyCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewController.m; sourceTree = "<group>"; };
 		1A6E607B1D81591700BB5232 /* CLHeaderCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHeaderCircleView.h; sourceTree = "<group>"; };
@@ -246,6 +258,14 @@
 				1A1E0FC41D640FB200D2558C /* CompareStringVC.m */,
 				1A64F7131D878A6200E97588 /* MyCollectionViewController.h */,
 				1A64F7141D878A6200E97588 /* MyCollectionViewController.m */,
+				1A52D0C41D9A47BB005A0C15 /* TabbarAnimation.h */,
+				1A52D0C51D9A47BB005A0C15 /* TabbarAnimation.m */,
+				1A52D0C71D9A488C005A0C15 /* ViewControllerOne.h */,
+				1A52D0C81D9A488C005A0C15 /* ViewControllerOne.m */,
+				1A52D0CA1D9A48A6005A0C15 /* ViewControllerTwo.h */,
+				1A52D0CB1D9A48A6005A0C15 /* ViewControllerTwo.m */,
+				1A52D0CD1D9A48BB005A0C15 /* ViewControllerThree.h */,
+				1A52D0CE1D9A48BB005A0C15 /* ViewControllerThree.m */,
 				1AF0C0AA1D586229009CC363 /* Main.storyboard */,
 				1AF0C0AD1D586229009CC363 /* Assets.xcassets */,
 				1AF0C0AF1D586229009CC363 /* LaunchScreen.storyboard */,
@@ -437,12 +457,14 @@
 			files = (
 				1A1F3EF11D59BCE100D1FC94 /* ShoppingVC.m in Sources */,
 				1A1F3EE11D59857100D1FC94 /* BoomAnimationVC.m in Sources */,
+				1A52D0C91D9A488C005A0C15 /* ViewControllerOne.m in Sources */,
 				1A1F3EDE1D5966FC00D1FC94 /* BasicAnimationVC.m in Sources */,
 				1A8AAFA81D62A71A005499A9 /* UberAnimationVC.m in Sources */,
 				1A1E0FC81D6411F900D2558C /* HealthRecord.m in Sources */,
 				1AF0C0A91D586229009CC363 /* ViewController.m in Sources */,
 				1A1E0FC51D640FB200D2558C /* CompareStringVC.m in Sources */,
 				1AF0C0C61D586E57009CC363 /* BaseViewController.m in Sources */,
+				1A52D0C61D9A47BB005A0C15 /* TabbarAnimation.m in Sources */,
 				1AF0C0BD1D58639B009CC363 /* JumpAnimationVC.m in Sources */,
 				1AF0C0CA1D5873E6009CC363 /* GuideView.m in Sources */,
 				1A6E607D1D81591700BB5232 /* CLHeaderCircleView.m in Sources */,
@@ -451,7 +473,9 @@
 				1A1E0FCB1D64120C00D2558C /* NSDictionary+Parse.m in Sources */,
 				1AF0C0C01D586ACB009CC363 /* LoadWebVC.m in Sources */,
 				1AD7DAD61D7967D4007698EF /* GetUUIDVC.m in Sources */,
+				1A52D0CF1D9A48BB005A0C15 /* ViewControllerThree.m in Sources */,
 				1AD7DAD91D79680C007698EF /* JNKeychain.m in Sources */,
+				1A52D0CC1D9A48A6005A0C15 /* ViewControllerTwo.m in Sources */,
 				1AF0C0C31D586E46009CC363 /* NSString+ColorCategory.m in Sources */,
 				1A1F3EE41D5985F700D1FC94 /* UIView+boom.m in Sources */,
 				1A64F7151D878A6200E97588 /* MyCollectionViewController.m in Sources */,
