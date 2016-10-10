@@ -28,7 +28,7 @@
     self.tableView.delegate =self;
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
-    self.methods = @[@"上下跳动动画",@"加载webview",@"定制回退按钮和导航栏颜色,纯色image",@"基础动画",@"爆炸动画",@"购物页面",@"uber动画",@"比较字符串，属性排序,倒序",@"拉起应用",@"UUID按钮图片系统信息itunes信息",@"tabbar动画"];
+    self.methods = @[@"上下跳动动画",@"加载webview",@"定制回退按钮和导航栏颜色,纯色image",@"基础动画",@"爆炸动画",@"购物页面",@"uber动画",@"比较字符串，属性排序,倒序",@"拉起应用",@"UUID按钮图片系统信息itunes信息",@"tabbar动画",@"跳转自身setting",@"跳转WiFi列表"];
 
 }
 #pragma mark - Table view datasource
@@ -122,6 +122,17 @@
     }else if(indexPath.row == 10){
         TabbarAnimation *tabbar = [[TabbarAnimation alloc] init];
         [self.navigationController pushViewController:tabbar animated:YES];
+    }else if(indexPath.row == 11){
+        if (UIApplicationOpenSettingsURLString != nil) {
+            NSURL *URL = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
+            [[UIApplication sharedApplication] openURL:URL];
+        } else {
+            
+        }
+    }else if(indexPath.row == 12){
+        if (UIApplicationOpenSettingsURLString != NULL) {
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"prefs:root=WIFI"]];
+        }
     }
 
    
