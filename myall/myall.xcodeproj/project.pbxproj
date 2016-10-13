@@ -42,6 +42,9 @@
 		1A64F7151D878A6200E97588 /* MyCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A64F7141D878A6200E97588 /* MyCollectionViewController.m */; };
 		1A6E607D1D81591700BB5232 /* CLHeaderCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E607C1D81591700BB5232 /* CLHeaderCircleView.m */; };
 		1A8AAFA81D62A71A005499A9 /* UberAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8AAFA71D62A71A005499A9 /* UberAnimationVC.m */; };
+		1A933B4A1DAF20BD0078BAE3 /* ChatClientTCPVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A933B491DAF20BD0078BAE3 /* ChatClientTCPVC.m */; };
+		1A933B4F1DAF23E40078BAE3 /* JoinChatVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A933B4E1DAF23E40078BAE3 /* JoinChatVC.m */; };
+		1A933B521DAF23F70078BAE3 /* ChatVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A933B511DAF23F70078BAE3 /* ChatVC.m */; };
 		1AD7DAD61D7967D4007698EF /* GetUUIDVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD7DAD51D7967D4007698EF /* GetUUIDVC.m */; };
 		1AD7DAD91D79680C007698EF /* JNKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD7DAD81D79680C007698EF /* JNKeychain.m */; };
 		1AF0C0A31D586229009CC363 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF0C0A21D586229009CC363 /* main.m */; };
@@ -112,6 +115,12 @@
 		1A6E607C1D81591700BB5232 /* CLHeaderCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHeaderCircleView.m; sourceTree = "<group>"; };
 		1A8AAFA61D62A71A005499A9 /* UberAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UberAnimationVC.h; sourceTree = "<group>"; };
 		1A8AAFA71D62A71A005499A9 /* UberAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UberAnimationVC.m; sourceTree = "<group>"; };
+		1A933B481DAF20BD0078BAE3 /* ChatClientTCPVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatClientTCPVC.h; sourceTree = "<group>"; };
+		1A933B491DAF20BD0078BAE3 /* ChatClientTCPVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatClientTCPVC.m; sourceTree = "<group>"; };
+		1A933B4D1DAF23E40078BAE3 /* JoinChatVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoinChatVC.h; sourceTree = "<group>"; };
+		1A933B4E1DAF23E40078BAE3 /* JoinChatVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JoinChatVC.m; sourceTree = "<group>"; };
+		1A933B501DAF23F70078BAE3 /* ChatVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatVC.h; sourceTree = "<group>"; };
+		1A933B511DAF23F70078BAE3 /* ChatVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatVC.m; sourceTree = "<group>"; };
 		1AD7DAD41D7967D4007698EF /* GetUUIDVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetUUIDVC.h; sourceTree = "<group>"; };
 		1AD7DAD51D7967D4007698EF /* GetUUIDVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetUUIDVC.m; sourceTree = "<group>"; };
 		1AD7DAD71D79680C007698EF /* JNKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNKeychain.h; sourceTree = "<group>"; };
@@ -220,6 +229,30 @@
 			path = resource;
 			sourceTree = "<group>";
 		};
+		1A933B4B1DAF23A30078BAE3 /* TabBarVC */ = {
+			isa = PBXGroup;
+			children = (
+				1A52D0C71D9A488C005A0C15 /* ViewControllerOne.h */,
+				1A52D0C81D9A488C005A0C15 /* ViewControllerOne.m */,
+				1A52D0CA1D9A48A6005A0C15 /* ViewControllerTwo.h */,
+				1A52D0CB1D9A48A6005A0C15 /* ViewControllerTwo.m */,
+				1A52D0CD1D9A48BB005A0C15 /* ViewControllerThree.h */,
+				1A52D0CE1D9A48BB005A0C15 /* ViewControllerThree.m */,
+			);
+			name = TabBarVC;
+			sourceTree = "<group>";
+		};
+		1A933B4C1DAF23CD0078BAE3 /* ChatTCP */ = {
+			isa = PBXGroup;
+			children = (
+				1A933B4D1DAF23E40078BAE3 /* JoinChatVC.h */,
+				1A933B4E1DAF23E40078BAE3 /* JoinChatVC.m */,
+				1A933B501DAF23F70078BAE3 /* ChatVC.h */,
+				1A933B511DAF23F70078BAE3 /* ChatVC.m */,
+			);
+			name = ChatTCP;
+			sourceTree = "<group>";
+		};
 		1AF0C0951D586229009CC363 = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +274,8 @@
 		1AF0C0A01D586229009CC363 /* myall */ = {
 			isa = PBXGroup;
 			children = (
+				1A933B4C1DAF23CD0078BAE3 /* ChatTCP */,
+				1A933B4B1DAF23A30078BAE3 /* TabBarVC */,
 				1A1F3EF21D59BCED00D1FC94 /* Shopping */,
 				1A1F3EEE1D59BC9C00D1FC94 /* Animation */,
 				1AF0C0C71D586E60009CC363 /* base */,
@@ -260,12 +295,8 @@
 				1A64F7141D878A6200E97588 /* MyCollectionViewController.m */,
 				1A52D0C41D9A47BB005A0C15 /* TabbarAnimation.h */,
 				1A52D0C51D9A47BB005A0C15 /* TabbarAnimation.m */,
-				1A52D0C71D9A488C005A0C15 /* ViewControllerOne.h */,
-				1A52D0C81D9A488C005A0C15 /* ViewControllerOne.m */,
-				1A52D0CA1D9A48A6005A0C15 /* ViewControllerTwo.h */,
-				1A52D0CB1D9A48A6005A0C15 /* ViewControllerTwo.m */,
-				1A52D0CD1D9A48BB005A0C15 /* ViewControllerThree.h */,
-				1A52D0CE1D9A48BB005A0C15 /* ViewControllerThree.m */,
+				1A933B481DAF20BD0078BAE3 /* ChatClientTCPVC.h */,
+				1A933B491DAF20BD0078BAE3 /* ChatClientTCPVC.m */,
 				1AF0C0AA1D586229009CC363 /* Main.storyboard */,
 				1AF0C0AD1D586229009CC363 /* Assets.xcassets */,
 				1AF0C0AF1D586229009CC363 /* LaunchScreen.storyboard */,
@@ -466,12 +497,15 @@
 				1AF0C0C61D586E57009CC363 /* BaseViewController.m in Sources */,
 				1A52D0C61D9A47BB005A0C15 /* TabbarAnimation.m in Sources */,
 				1AF0C0BD1D58639B009CC363 /* JumpAnimationVC.m in Sources */,
+				1A933B4A1DAF20BD0078BAE3 /* ChatClientTCPVC.m in Sources */,
 				1AF0C0CA1D5873E6009CC363 /* GuideView.m in Sources */,
 				1A6E607D1D81591700BB5232 /* CLHeaderCircleView.m in Sources */,
 				1AF0C0BA1D58625C009CC363 /* MethodsListViewController.m in Sources */,
 				1A1F3EFD1D59C55800D1FC94 /* ShoppingCollectionViewCell.m in Sources */,
 				1A1E0FCB1D64120C00D2558C /* NSDictionary+Parse.m in Sources */,
 				1AF0C0C01D586ACB009CC363 /* LoadWebVC.m in Sources */,
+				1A933B521DAF23F70078BAE3 /* ChatVC.m in Sources */,
+				1A933B4F1DAF23E40078BAE3 /* JoinChatVC.m in Sources */,
 				1AD7DAD61D7967D4007698EF /* GetUUIDVC.m in Sources */,
 				1A52D0CF1D9A48BB005A0C15 /* ViewControllerThree.m in Sources */,
 				1AD7DAD91D79680C007698EF /* JNKeychain.m in Sources */,
